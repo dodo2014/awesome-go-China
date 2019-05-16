@@ -48,12 +48,13 @@
         - [Middlewares](#middlewares)
             - [Actual middlewares](#actual-middlewares)
             - [Libraries for creating HTTP middlewares](#libraries-for-creating-http-middlewares)
+        - [Routers](#routers)
     - [Windows](#windows)
 
 - [Tools](#tools)
     - [Code Analysis](#code-analysis)
+    - [Redis Analysis](#redis-analysis)
     - [Editor Plugins](#editor-plugins)
-    - [Go Tools](#go-tools)
     - [Software Packages](#software-packages)
         - [DevOps Tools](#devops-tools)
         - [Other Software](#other-software)
@@ -112,11 +113,14 @@
 
 *Generic datastructures and algorithms in Go.*
 
+- [go-tagexpr](https://github.com/bytedance/go-tagexpr): An interesting go struct tag expression syntax for field validation, etc.
+
 
 ## Database
 
 *Databases implemented in Go.*
 
+[CovenantSQL](https://github.com/CovenantSQL/CovenantSQL)：A decentralized, crowdsourcing SQL database on blockchain.
 
 *Database tools.*
 
@@ -208,7 +212,7 @@
 
 *Libraries for Machine Learning.*
 
-
+- [gorse](https://github.com/zhenghaoz/gorse): A High Performance Recommender System Package based on Collaborative Filtering for Go.
 
 ## Messaging
 
@@ -233,6 +237,8 @@
 - [Pholcus](https://github.com/henrylee2cn/pholcus): Pholcus is a distributed, high concurrency and powerful web crawler software.
 - [Teleport](https://github.com/henrylee2cn/teleport): Teleport is a versatile, high-performance and flexible TCP socket framework. It can be used for peer-peer, rpc, gateway, micro services, push services, game services and so on.
 - [Surfer](https://github.com/henrylee2cn/surfer): Package surfer is a high level concurrency http client. It has surf andphantom download engines, highly simulated browser behavior, the function of analog login and so on.
+- [Tao](https://github.com/leesper/tao): Asynchronous TCP framework.
+- [Kube-OVN](https://github.com/alauda/kube-ovn): An OVN-based Kubernetes Network Fabric for Enterprises.
 
 ## OpenGL
 
@@ -317,7 +323,7 @@
 *General utilities and tools to make your life easier.*
 
 - [tsdump](https://github.com/voidint/tsdump): Database table structure dump tool.
-
+- [soar](https://github.com/XiaoMi/soar): A tool, which can help SQL optimization and rewrite. It's developed and maintained by the DBA Team of Xiaomi AI&Cloud.
 
 
 ## Validation
@@ -344,14 +350,20 @@
 
 - [Beego](http://beego.me):Beego is an HTTP framework for rapid development of Go applications. It can be used to develop APIs, web apps and backend services quickly. It is a RESTful framework. It has the ease of use, intelligent, modular , high-performance characteristics.
 - [Faygo](https://github.com/henrylee2cn/faygo)：Faygo is a fast and concise Go Web framework that can be used to develop high-performance web app(especially API) with fewer codes. Just define a struct Handler, Faygo will automatically bind/verify the request parameters and generate the online API doc.
+- [Gin-X](https://github.com/hhxsv5/gin-x) [Gin](https://github.com/gin-gonic/gin) template, more components to improve development efficiency.
 
 ### Middlewares
 
 #### Actual middlewares
-
+- [Gin Metrics](https://github.com/kylesliu/gin_metrics)：A middleware based on Gin that is responsible for exposing the requested logs to *Metrics*, showing it in Grafana after being crawled by Prometheus. In less than 10 minutes, a monitoring system can be built on the original architecture.
 
 #### Libraries for creating HTTP middlewares
 
+### Routers
+
+*Web-oriented routers.*
+
+- [Gorouter](https://github.com/xujiajun/gorouter): Gorouter is a simple and fast HTTP router for Go. It is easy to build RESTful APIs and your web framework.
 
 # Tools
 
@@ -360,6 +372,9 @@ Go software and plugins.
 
 ## Code Analysis
 * [go-checkstyle](https://github.com/qiniu/checkstyle) checkstyle is a style check tool like java checkstyle. This tool inspired by [java checkstyle](https://github.com/checkstyle/checkstyle), [golint] (https://github.com/golang/lint). The style refered to some points in [Go Code Review Comments](https://code.google.com/p/go-wiki/wiki/CodeReviewComments).
+
+## Redis Analysis
+* [go-redis-memory-analysis](https://github.com/hhxsv5/go-redis-memory-analysis) 🔎 Analyzing memory of redis is to find the keys(prefix) which used a lot of memory, export the analysis result into csv file. 
 
 
 ## Editor Plugins
